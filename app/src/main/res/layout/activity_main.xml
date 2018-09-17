@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/form_title"
+        android:layout_width="308dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Untitled"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="4dp"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/responses"
+        android:layout_width="59dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/form_title"
+        android:layout_toEndOf="@+id/form_title"
+        android:text="Responses"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="444dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addquestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/responses"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <EditText
+        android:id="@+id/form_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="141dp"
+        android:ems="10"
+        android:text="Untitled Question"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <Spinner
+        android:id="@+id/form_options"
+        android:layout_width="170dp"
+        android:layout_height="52dp"
+        android:layout_alignBottom="@+id/form_question"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-27dp"
+        android:layout_marginEnd="12dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <LinearLayout
+        android:id="@+id/addfragment"
+        android:layout_width="match_parent"
+        android:layout_height="252dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical" />
+</RelativeLayout>

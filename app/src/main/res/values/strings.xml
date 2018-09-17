@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CustomForm</string>
+    <string-array name="options">
+        <item>RadioButton</item>
+        <item>CheckBox</item>
+        <item>DropDown</item>
+        <item>Answer</item>
+    </string-array>
+</resources>
